@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html>
 
+  <script>
+    function personalGreeting() {
+      var greeting = "Hello, ";
+      var name = document.forms["myForm]["userName'].value;
+      if(name == "'){
+        alert("Please enter your name");
+      } else {
+        alert(greeting + name);
+      }    
+  </script
 
   <body>
     <h1>This is my website</h1>
     <h2>Welcome</h2>
-    <a href="Dogs.csv"> Dogs Spreadsheet Download Here</a>
-    <a href="Dogs.htm"> Dogs Spreadsheet View Here</a>
+    <form name = "myForm">
+      What is your name? <input type="text" name="userName">
+        <button onclick="myFunction();">Click Me!</button>
+      
+    <br><a href="Dogs.csv"> Dogs Spreadsheet Download Here</a>
+
         
         
   </body>        
