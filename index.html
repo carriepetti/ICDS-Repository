@@ -2,9 +2,11 @@
 <html>
 
   <script>
+    var greeting;
+    var name;
     function personalGreeting() {
-      var greeting = "Hello, ";
-      var name = document.forms["myForm"]["userName"].value;
+      greeting = "Hello, ";
+      name = document.forms["myForm"]["userName"].value;
       if(name == ""){
         alert("Please enter your name");
       } else {
