@@ -11,16 +11,9 @@
         alert("Please enter your name");
       } else {
         alert(greeting + name);
+        document.getElementById("displayGreeting").innerHTML = greeting + name;
       }
-      //document.getElementById("displayGreeting").innerHTML = greeting + name;
-      
-      /*document.write(
-        '<p>'
-          + greeting + name + '!' +
-        '</p>'
-      );*/
-    }
-    document.getElementById("displayGreeting").innerHTML = greeting + name;
+
   </script>
 
   <body>
