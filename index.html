@@ -5,6 +5,11 @@
     function personalGreeting() {
       var greeting = "Hello, ";
       var name = document.forms["myForm"]["userName"].value;
+      if(name == ""){
+        alert("Please enter your name");
+      } else {
+        alert(greeting + name);
+      }
       
       document.write(
         '<p>'
