@@ -10,12 +10,13 @@
       } else {
         alert(greeting + name);
       }
+      document.getElementById("displayGreeting").innerHTML = greeting + name;
       
-      document.write(
+      /*document.write(
         '<p>'
           + greeting + name + '!' +
         '</p>'
-      );
+      );*/
     }
   </script>
 
@@ -28,6 +29,8 @@
       What is your name? <input type="text" name="userName">
         <button onclick="personalGreeting();">Click Me!</button>
     </form>  
+    
+    <p id="displayGreeting"></p>
       
     <br>
         
